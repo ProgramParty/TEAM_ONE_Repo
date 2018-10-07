@@ -1,0 +1,4 @@
+Language written in: Python
+What are its functions: Simple Turnbased RPG game with basic store, level up, and combat. 
+Will probably use pygame for it.
+Due date: No final date, but we will have a checkpoint in 22.10.2018(10.22.2018 in usa)
