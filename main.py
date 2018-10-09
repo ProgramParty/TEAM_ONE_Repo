@@ -103,7 +103,7 @@ def tutorial():
 	time.sleep(2)
 	print("Be extremely careful with what you choose. This game heavily relies on correct choices.")
 	time.sleep(2)
-	print("You will also be able to earn money through sepcial quests.")
+	print("You will also be able to earn money through special quests.")
 	time.sleep(2)
 	print("You will have the option to spend your money on better weapons or armor.")
 	time.sleep(2)
