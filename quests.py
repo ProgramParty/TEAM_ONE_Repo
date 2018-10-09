@@ -79,3 +79,5 @@ def quest1part2():
         print("Something went wrong.")
         time.sleep(2)
         quest1part2()
+ 
+quest1()
