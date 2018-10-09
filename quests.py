@@ -17,11 +17,11 @@ def quest1():
     time.sleep(3)
     quest1in = input("Y/N: ")
     time.sleep(2)
-    if quest1in == "Y" or quest1in == "y":
+    if quest1in.lower == "y":
         print("Fine.")
         quest1part2()
 
-    elif quest1in == "N" or quest1input == "n":
+    elif quest1in.lower == "n":
         print("You do not have any money left.")
         time.sleep(2)
         print("You can not even buy food. Think about it... You have got nothing to lose.")
