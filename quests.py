@@ -15,21 +15,21 @@ def quest1():
     time.sleep(3)
     print("So, are you going to rob him or what?")
     time.sleep(3)
-    quest1in = input("Y/N: ")
+    quest1in = input("Y/N: ").lower()
     time.sleep(2)
-    if quest1in.lower == "y":
+    if quest1in == "y":
         print("Fine.")
         quest1part2()
 
-    elif quest1in.lower == "n":
+    elif quest1in == "n":
         print("You do not have any money left.")
         time.sleep(2)
         print("You can not even buy food. Think about it... You have got nothing to lose.")
         time.sleep(3)
         print("So, do you wanna rob Garry or no?")
         time.sleep(2)
-        quest1input2 = input("Y/N: ")
-        if quest1input2.lower == "y":
+        quest1input2 = input("Y/N: ").lower
+        if quest1input2 == "y":
             print("Nice. You made the right choice.")
             quest1quest1part2()
 
