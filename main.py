@@ -1,4 +1,5 @@
 import time
+import quests
 
 def start():
 	print("Welcome to Remicon.")
@@ -15,21 +16,21 @@ def introductionask():
 	print("So do you wanna check the introduction?")
 	time.sleep(1)
 	intro = input("Y/N: ")
-	if intro == "Y" or intro == "y":
+	if intro.lower() == "y":
 		print("Great")
 		time.sleep(2)
 		introduction()
-	elif intro == "N" or intro == "n":
+	elif intro.lower() == "n":
 		print("Oh ok")
 		time.sleep(2)
 		print("Are you sure? The introduction is pretty important")
 		time.sleep(2)
 		ninput = input("Y/N: ")
-		if ninput == "Y" or ninput == "y":
+		if ninput.lower() == "y":
 			print("Okay")
 			time.sleep(2)
-			exit()
-		elif input == "N" or ninput == "n":
+			mission1()
+		elif ninput.lower() == "n":
 			print("Okay")
 			time.sleep(2)
 			introduction()
@@ -96,22 +97,24 @@ def mission1():
 
 def tutorial():
 	print("In Remicon, you have to slay all 5 dragons in order to bring back peace in your village.")
-	time.sleep(2)
+	time.sleep(3)
 	print("You will be able to form relationships with other heroes that may be able to help you.")
-	time.sleep(2)
+	time.sleep(3)
 	print("Every single choice can be proven a mistake.")
-	time.sleep(2)
+	time.sleep(3)
 	print("Be extremely careful with what you choose. This game heavily relies on correct choices.")
-	time.sleep(2)
-	print("You will also be able to earn money through special quests.")
-	time.sleep(2)
+	time.sleep(3)
+	print("You will also be able to earn money through sepcial quests.")
+	time.sleep(3)
 	print("You will have the option to spend your money on better weapons or armor.")
-	time.sleep(2)
+	time.sleep(3)
 	print("For now you only have one knife.")
-	time.sleep(2)
+	time.sleep(3)
 	print("Killing dragons will also grant you money.")
 	print("Enjoy!")
-	time.sleep(1)
-	exit()
+	time.sleep(3)
+	quests.quest1()
+
+
 
 start()
