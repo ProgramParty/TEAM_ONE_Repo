@@ -1,5 +1,5 @@
 import time
-from quests import quest1
+from quests import *
 
 def start():
 	print("Welcome to Remicon.")
@@ -104,7 +104,7 @@ def tutorial():
 	time.sleep(4)
 	print("Be extremely careful with what you choose. This game heavily relies on correct choices.")
 	time.sleep(4)
-	print("You will also be able to earn money through sepcial quests.")
+	print("You will also be able to earn money through special quests.")
 	time.sleep(4)
 	print("You will have the option to spend your money on better weapons or armor.")
 	time.sleep(4)
@@ -114,6 +114,7 @@ def tutorial():
 	print("Enjoy!")
 	time.sleep(4)
 	quest1.quest1()
+	# quest2.quest2()
 
 
 
