@@ -1,5 +1,5 @@
 import time
-import quests
+from quests import quest1
 
 def start():
 	print("Welcome to Remicon.")
@@ -23,15 +23,15 @@ def introductionask():
 	elif intro.lower() == "n":
 		print("Oh ok")
 		time.sleep(2)
-		print("Are you sure? The introduction is pretty important")
+		print("Are you sure? The introduction is pretty important.")
 		time.sleep(2)
 		ninput = input("Y/N: ")
 		if ninput.lower() == "y":
-			print("Okay")
+			print("Okay.")
 			time.sleep(2)
 			mission1()
 		elif ninput.lower() == "n":
-			print("Okay")
+			print("Okay.")
 			time.sleep(2)
 			introduction()
 		else:
@@ -39,29 +39,29 @@ def introductionask():
 			time.sleep(2)
 			introductionask()
 	else:
-		print("Something went wrong")
+		print("Something went wrong.")
 		time.sleep(2)
-		print("Let us start over again")
+		print("Let us start over again.")
 		time.sleep(2)
 		introductionask()
 
 def introduction():
 	print("Once upon a time, in 1845 at a small village in Austria, citizens were attacked by the great force of dragons.")
 	time.sleep(2)
-	print("There were 4 different dragons.")
+	print("There were 5 different dragons.")
 	time.sleep(3)
-	print("Fire, Ice, Water, Electricity and Dark")
+	print("Fire, Ice, Water, Electricity and Dark.")
 	time.sleep(3)
-	print("Soldiers tried as hard as they could")
+	print("Soldiers tried as hard as they could.")
 	time.sleep(3)
-	print("But all of them got killed")
+	print("But all of them got killed.")
 	time.sleep(3)
-	print("Dragons ruled the whole village, and no one could take action")
+	print("Dragons ruled the whole village, and no one could take action.")
 	time.sleep(3)
 	print("Everyhing seems pointless. Life in general. No reason to live anymore.")
 	time.sleep(2)
 	print("Dragons often choose prays and eat them like the monsters they are.")
-	time.sleep(2)
+	time.sleep(3)
 	mission1()
 
 def mission1():
@@ -79,7 +79,7 @@ def mission1():
 	time.sleep(3)
 	print("Ice Dragon: How old are you?")
 	time.sleep(3)
-	print("I a 12 year old that will soon be your killer.")
+	print("I am a 12 year old that will soon be your killer.")
 	time.sleep(3)
 	print("Ice Dragon: You kiss your mother with that mouth?")
 	time.sleep(3)
@@ -97,23 +97,23 @@ def mission1():
 
 def tutorial():
 	print("In Remicon, you have to slay all 5 dragons in order to bring back peace in your village.")
-	time.sleep(3)
+	time.sleep(4)
 	print("You will be able to form relationships with other heroes that may be able to help you.")
-	time.sleep(3)
+	time.sleep(4)
 	print("Every single choice can be proven a mistake.")
-	time.sleep(3)
+	time.sleep(4)
 	print("Be extremely careful with what you choose. This game heavily relies on correct choices.")
-	time.sleep(3)
+	time.sleep(4)
 	print("You will also be able to earn money through sepcial quests.")
-	time.sleep(3)
+	time.sleep(4)
 	print("You will have the option to spend your money on better weapons or armor.")
-	time.sleep(3)
+	time.sleep(4)
 	print("For now you only have one knife.")
-	time.sleep(3)
+	time.sleep(4)
 	print("Killing dragons will also grant you money.")
 	print("Enjoy!")
-	time.sleep(3)
-	quests.quest1()
+	time.sleep(4)
+	quest1.quest1()
 
 
 
