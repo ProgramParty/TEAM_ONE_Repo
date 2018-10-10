@@ -3,7 +3,7 @@ try:
     name = player.name
     coins = player.coins
     drgnskilled = player.drgnskilled
-except NameError:
+except VarError:
     name = "edge"
     coins = 1000
     drgnskilled = 0
