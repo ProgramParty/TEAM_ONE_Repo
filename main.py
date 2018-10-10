@@ -114,7 +114,8 @@ def tutorial():
 	print("Enjoy!")
 	time.sleep(4)
 	quest1.quest1()
-	# quest2.quest2()
+	time.sleep(2)
+	quest2.quest2()
 
 
 

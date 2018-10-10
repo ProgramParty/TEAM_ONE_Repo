@@ -31,7 +31,7 @@ def quest1():
         quest1input2 = input("Y/N: ").lower
         if quest1input2 == "y":
             print("Nice. You made the right choice.")
-            # quest1quest1part2()
+            quest1part2()
 
         else:
             print("You did not have any money and died to starvation.")
@@ -67,8 +67,7 @@ def quest1part2():
         print("You have 1000$")
         time.sleep(3)
         print("You did the right thing.")
-        time.sleep(3)
-        exit()
+
 
     elif quest1input3 == "2":
         print("He did not believe you. He killed you.")
