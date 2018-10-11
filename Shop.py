@@ -1,8 +1,12 @@
 import time
+from player import Player
+
 try:
-    name = player.name
-    coins = player.coins
-    drgnskilled = player.drgnskilled
+    # As of now only name, coin, and dragons_killed are set up in Player,
+    # below is how to call each
+    name = Player.name
+    coins = Player.coin
+    drgnskilled = Player.dragons_killed
 except VarError:
     name = "edge"
     coins = 1000

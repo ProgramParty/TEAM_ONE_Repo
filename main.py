@@ -1,5 +1,13 @@
 import time
+
+# import call to player
+from player import Player
+
 from quests import *
+
+# Just putting this here for now, if you call this
+# print(Player())
+# it prints out the stats for the player
 
 def start():
 	print("Welcome to Remicon.")
@@ -7,8 +15,12 @@ def start():
 	print("The most fun and creative command line RPG.")
 	time.sleep(2)
 	name = input("So what is your name?: ")
+	# Each part of player has a set, that changes the part on a class level
+	# set_name takes 2 object in, cls and name, cls is the calling class so 
+	# Player in this case and name is what we want to change the players name to
+	Player.set_name(name)
 	time.sleep(2)
-	print(name, "is such a cool name!")
+	print(Player.name, "is such a cool name!")
 	time.sleep(2)
 	introductionask()
 
