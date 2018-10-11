@@ -14,11 +14,10 @@ def start():
 	time.sleep(2)
 	print("The most fun and creative command line RPG.")
 	time.sleep(2)
-	name = input("So what is your name?: ")
 	# Each part of player has a set, that changes the part on a class level
-	# set_name takes 2 object in, cls and name, cls is the calling class so 
+	# name takes 2 object in, cls and name, cls is the calling class so 
 	# Player in this case and name is what we want to change the players name to
-	Player.set_name(name)
+	Player.name = input("So what is your name?: ")
 	time.sleep(2)
 	print(Player.name, "is such a cool name!")
 	time.sleep(2)

@@ -7,6 +7,11 @@ try:
     name = Player.name
     coins = Player.coin
     drgnskilled = Player.dragons_killed
+
+    # To set Player use
+    # Player.name = name
+    # Player.coin = coin
+    # Player.dragons_killed = drgnskilled
 except VarError:
     name = "edge"
     coins = 1000
