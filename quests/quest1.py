@@ -1,5 +1,6 @@
 import time
 
+
 def quest1():
     print("This is your first quest.")
     time.sleep(2)
@@ -43,6 +44,7 @@ def quest1():
         time.sleep(1)
         quest1()
 
+
 def quest1part2():
     print("Okay, you are inside the house. You need to be quick.")
     time.sleep(4)
@@ -67,7 +69,6 @@ def quest1part2():
         print("You have 1000$")
         time.sleep(3)
         print("You did the right thing.")
-
 
     elif quest1input3 == "2":
         print("He did not believe you. He killed you.")

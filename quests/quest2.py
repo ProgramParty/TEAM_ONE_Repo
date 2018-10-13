@@ -1,4 +1,6 @@
 import time
+from player import Player
+
 
 def quest2():
     print("This is your second quest.")
@@ -40,6 +42,7 @@ def quest2():
     time.sleep(2)
     qu2part2()
 
+
 def qu2part2():
     print("Do you want him to help you?")
     quest2input = input("Y/N:").lower()
@@ -55,6 +58,7 @@ def qu2part2():
     else:
         print("Something went wrong.")
         qu2part2()
+
 
 def qu2part3():
     time.sleep(2)
@@ -87,6 +91,7 @@ def qu2part3():
         print("Something went wrong.")
         time.sleep(2)
 
+
 def qu2part4():
     time.sleep(2)
     print("You take his sword and put it up in his stomach.")
@@ -99,4 +104,6 @@ def qu2part4():
     time.sleep(3)
     print("You have gained their respect.")
     time.sleep(3)
-    exit()
+    print("Here are your current stats: ")
+    print(Player())
+    time.sleep(5)
